@@ -1,0 +1,64 @@
+{%  extends 'base.html' %}
+{% load static %}
+{% block title %}Products{% endblock %}
+{% block content %}
+<div class="my-form container p-5 my-5 rounded border border-warning">
+    <form>
+        <h2 class="text-center">
+          Products
+          
+        </h2>
+        <hr>
+        <section>
+          <div class="container-fluid">
+            <div class="row p-5" >
+        
+      {% for i in pro %}
+      <div>
+        <div class="card m-2" style="width: 18rem;">
+          <img src="{{i.photo.url}}" class="card-img-top" alt="{{x.name}}" width="220" height="220">
+          <div class="card-body">
+            <h5 class="card-title">{{i.name}}</h5>
+            <p class="card-text text-truncate">{{i.description}}</p>
+            <a href="{% url 'product' pro_id=i.id %}" class="btn btn-warning">Show Details</a>
+            
+            
+          </div>
+        </div>
+      </div>
+            
+            
+      {% empty %}
+      <h4 class="alert alert-warning">
+        No products here
+        <a href="{% url 'products' %}" class="text-dark">All Products</a>
+      </h4>
+      {% endfor %}
+
+        <section>
+            <div class="container-fluid">
+              <div class="row p-5" >
+    
+                
+    
+                
+    
+               
+    
+
+        
+              
+    
+
+    
+              </div>
+            </div>
+        </section>
+    
+
+    </form>
+
+</div>
+
+
+{% endblock %}

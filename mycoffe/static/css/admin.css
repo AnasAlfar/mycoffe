@@ -1,0 +1,55 @@
+#header{
+    background: #5A020Cce;
+
+    color: #fff;
+}
+
+#head{
+    color:bisque !important;
+}
+
+.module h2, 
+.module caption, 
+.inline-group h2 {
+    background: #740d19ce;    
+
+}
+
+div.breadcrumbs{
+    background: #740d19ce;     
+}
+
+.selector-chosen h2{
+    background: #740d19ce !important;    
+}
+
+.selector .selector-available h2{
+    background: #740d19ce !important;
+    color:#fff !important;
+}
+
+.button.default, 
+input[type=submit].default, 
+.submit-row input.default,
+.button, 
+input[type=submit], 
+input[type=button], 
+.submit-row input, 
+a.button
+{
+    background: #740d19ce;
+    color:#fff !important;
+    
+}
+
+#toolbar form input[type="submit"]{
+    background: #740d19ce !important;
+    color:#fff !important;
+    
+
+}
+
+
+
+
+
